@@ -1,0 +1,164 @@
+.header{
+    height: 120px;
+    background-image:linear-gradient(0,#f51,#ff1b14);
+}
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.header__navbar-list{
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.header__navbar-item{
+    margin: 0 8px;
+    position: relative;
+}
+
+.header__navbar-item--dow:hover .header__qr{
+    display: block;
+}
+
+.header__navbar-item--bold{
+    font-weight: 400 !important;
+}
+.header__navbar-icon{
+    font-size: 1.6rem;
+    margin: 0 3px;
+
+}
+
+.header__navbar-item,
+.header__navbar-icon-link{
+    font-size: 1.3rem;
+    color: var(--white-color);
+    display: inline-block;
+    font-weight: 200;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.header__navbar-icon-link:hover,
+.header__navbar-item:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.header__navbar-list .header__navbar-item-no--opacity {
+    opacity: 0.9;
+}
+
+.header__navbar-item--separate::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid #ff7f74;
+    height: 14px;
+    right: -9px;
+    top:50%;
+    transform:translateY(-50%);
+
+}
+
+.header__navbar-no-pointer{
+    cursor: text;
+    
+}
+
+/* Header QR CODE */
+
+.header__qr{
+    width: 186px;
+    background-color: var(--white-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 2px;
+    padding:2px;
+    margin-top: 8px;
+    display: none;
+    animation: fadeIn ease-in 0.3s;
+}
+
+.header__qr::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    top:-14px;
+
+}
+
+
+
+.header__qr-img{
+    width: 100%;
+
+}
+
+.header__qr-app{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 11px;
+
+}
+
+.header__qr-link{
+    
+
+}
+
+.header__qr-dow{
+    height: 17px;
+    
+}
+
+.header__notifi{
+    background-color: var(--white-color);
+    position: absolute;
+    top: 148%; 
+    width: 404px;
+    height: 404px;
+    right: 0;
+    
+}
+
+.header__notifi-show{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__notifi-show--unlogin{
+    text-align: center;
+    
+}
+ 
+.header__notifi-show-img{
+    width: 25%;
+
+}
+
+.header__notifi-show-li{
+    color: #000;
+    text-align: center;
+}
+
+.header__notifi-bt{
+
+}
+
+
+.container{
+    background-color: #000;
+    height: 500px;
+
+}

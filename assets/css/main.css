@@ -1,6 +1,5 @@
 .header{
     height: 120px;
-    /* background-image:linear-gradient(0,#f51,#ff1b14); */
     background: linear-gradient(-180deg,#f53d2d,#f63);
 }
 .header__navbar{
@@ -45,8 +44,10 @@
 
 .header__notification:hover .header__notifi{
     display: block;
+    animation: fadeIn ease-in 0.3s;
 
 }
+
 
 .header__navbar-icon-link:hover,
 .header__navbar-item:hover{
@@ -125,11 +126,35 @@
 .header__notifi{
     background-color: var(--white-color);
     position: absolute;
-    top: 148%; 
+    top: 140%; 
     width: 402px;
     right: 0;
     display: none;
+    animation: fadeIn ease-in 0.3s;
     
+}
+
+
+.header__notifi::before{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 20px;
+    border-width: 20px 25px;
+    border-style:solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    top: -30px;
+    
+}
+
+.header__notifi::after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -15px;
+    width: 85px;
+    height: 20px;
 }
 
 .header__notifi-show{
@@ -156,11 +181,20 @@
 
 .header__notifi-bt{
     display: flex;
-    background-color: #dad7d7;
+    background-color: #eeebeb;
+    font-size: 1.45rem;
 }
+
+.header__notifi-bt > div > a:hover,
+.header__notifi-active:hover,
+.header__notifi-login:hover{
+    color: #f53d2d;
+    background-color:#dad7d7;
+}
+
 .header__notifi-bt > div {
     flex-grow: 1;
-    height: 35px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,11 +203,18 @@
 .header__notifi-bt > div > a {
     text-decoration: none;
     color: var(--text-color);
-    font-weight: 400;
+    padding: 10px 70px;
 }
 
+
+/* Authen modal */
+
+.auth-form__container{
+    padding:0 30px 30px 30px;
+}
+
+
 .container{
-    background-color: #000;
-    height: 500px;
+
 
 }

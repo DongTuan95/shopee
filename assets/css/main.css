@@ -231,14 +231,14 @@
 
 
 .auth-form__heading{
-    padding: 22px 30px;
+    padding: 10px 30px;
     font-size: 2.4rem;
     font-weight: 400;
     color: var(--text-color);
 }
 
 .auth-form__container{
-    padding:0 30px 30px 30px;
+    padding:0 30px;
 }
 
 .auth-form__input{
@@ -250,6 +250,7 @@
     opacity: 0.6;
     outline: none;
     border:1px solid var(--boder-color);
+    border-radius: 2px;
 
 }
 
@@ -258,8 +259,17 @@
 }
 
 .auth-form__label{
-    padding-bottom: 14px;
+    padding-bottom: 18px;
     display: flex;
+}
+
+.auth-form__controls{
+    padding-top: 14px;
+
+}
+
+.auth-form__form-social{
+    padding-top: 10px;
 }
 
 .aut-form__or{
@@ -271,11 +281,72 @@
 
 .auth-form__or2{
     color: var(--text-color);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     padding: 0 16px;
-    opacity: 0.6;
+    color: #c5c3c3;
 }
 
+.auth-form__social{
+    display: flex;
+    justify-content: space-between;
+}
+    
+.auth-form__social-icon{
+    font-size: 2rem;
+    padding-right: 10px;
+    color: var(--white-color);
+}
+
+.btn--with-icon{
+    color:  var(--white-color);
+    width: 135px;
+    font-weight: 450;
+}
+
+.auth-form__social--face{
+    background-color: #1877f2;
+
+}
+.auth-form__social--gg{
+    background-color: #4285f4;
+
+}
+.auth-form__social--apple{
+    background-color: #000;
+
+}
+
+.auth-form__aside{
+    margin-top: 4px;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 10px;
+    color: var(--text-color);
+    line-height: 20px;
+}
+
+.auth-form__policy-link{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.auth-form__footer{
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.auth-form__footer-text{
+    color: #c5c3c3;
+    margin: 10px;
+}
+
+.auth-form__switch-btn{
+    color: var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
+}
 
 .container{
 

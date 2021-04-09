@@ -68,17 +68,30 @@ html{
     margin: auto;
     background-color: var(--white-color);
     z-index: 1;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .btn{
     height: 40px;
+    border: none;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 1.6rem;
+    outline: none;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* font-weight: 450; */
+}
+
+
+.btn:hover{
+    opacity: 0.9;
 }
 
 .btn.btn--primary{
-    margin-bottom: 16px;
-    border: none;
-    font-size: 1.6rem;
+    margin-bottom: 17px;
     width: 100%;
     color: var(--white-color);
     background-color: var(--primary-color);

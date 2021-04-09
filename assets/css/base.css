@@ -19,6 +19,7 @@ html{
     box-sizing: border-box;
 }
 
+
 .grid{
     width: 1200px;
     max-width: 100%;
@@ -66,9 +67,7 @@ html{
 .modal__body{
     /* position: relative; */
     margin: auto;
-    background-color: var(--white-color);
     z-index: 1;
-    border-radius: 3px;
 }
 
 .btn{
@@ -91,7 +90,8 @@ html{
 }
 
 .btn.btn--primary{
-    margin-bottom: 17px;
+    /* margin-bottom: 17px; */
+    padding: 0;
     width: 100%;
     color: var(--white-color);
     background-color: var(--primary-color);

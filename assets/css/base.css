@@ -2,6 +2,8 @@
     --white-color:#fff;
     --black-color:#000;
     --text-color:#333;
+    --boder-color:#bdbdbd;
+    --primary-color:#f53d2d;
 }
 
 *{
@@ -67,4 +69,17 @@ html{
     background-color: var(--white-color);
     z-index: 1;
     border-radius: 5px;
+}
+
+.btn{
+    height: 40px;
+}
+
+.btn.btn--primary{
+    margin-bottom: 16px;
+    border: none;
+    font-size: 1.6rem;
+    width: 100%;
+    color: var(--white-color);
+    background-color: var(--primary-color);
 }

@@ -3,7 +3,7 @@
     --black-color:#000;
     --text-color:#333;
     --boder-color:#bdbdbd;
-    --primary-color:#f53d2d;
+    --primary-color:#fb5533;
 }
 
 *{
@@ -47,6 +47,16 @@ html{
     }
 }
 
+@keyframes growth{
+    from{
+        transform: scale(--growth-from);
+    }
+    to {
+        transform: scale(--growth-to);
+    }
+
+}
+
 /* modal */
 .modal{
     position: fixed;
@@ -55,6 +65,7 @@ html{
     left: 0;
     bottom: 0;
     display: flex;
+    animation: fadeIn linear 0.1s;
 }
 
 .modal__overlay{
@@ -68,6 +79,7 @@ html{
     /* position: relative; */
     margin: auto;
     z-index: 1;
+    animation: growth linear 0.1s;
 }
 
 .btn{

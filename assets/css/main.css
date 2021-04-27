@@ -18,6 +18,7 @@
 .header__navbar-item{
     margin: 0 8px;
     position: relative;
+    font-weight: 200;
 }
 
 .header__navbar-item--dow:hover .header__qr{
@@ -39,7 +40,7 @@
     font-size: 1.34rem;
     color: var(--white-color);
     display: inline-block;
-    font-weight: 200;
+    /* font-weight: 200; */
     text-decoration: none;
 }
 
@@ -72,6 +73,7 @@
 
 .header__navbar-no-pointer{
     cursor: text;
+    user-select: none;
     
 }
 
@@ -181,12 +183,14 @@
 .header__notifi-show-li{
     color: #000;
     text-align: center;
+    font-weight: 400;
 }
 
 .header__notifi-bt{
     display: flex;
     background-color: #eeebeb;
     font-size: 1.45rem;
+    font-weight: 400;
 }
 
 .header__notifi-bt > div > a:hover,
@@ -474,6 +478,10 @@
 
 }
 
+.header_container-insearch:focus ~ .header_container-history{
+    display: block;
+}
+
 
 /* SEARCH HISTORY  */
 .header_container-history{
@@ -484,14 +492,15 @@
     z-index: 2;
     top: 42px;
     border-radius: 2px;
-    /* display: none; */
+    display: none;
+    overflow: hidden;
 }
 
 .header_container-header{
     color: var(--text-color);
     font-size: 1.5rem;
     font-weight: 400;
-    opacity: 0.9 ;
+    opacity: 0.3 ;
     padding-left: 10px;
     user-select: none;
     margin: 0;
@@ -510,8 +519,7 @@
 }
 
 .header_container-item{
-    padding: 10px;
-    cursor: pointer;
+   
 }
 
 .header_container-item:hover{
@@ -521,5 +529,63 @@
 .header_container-item>a{
     color:var(--text-color);
     font-weight: 400;
+    display: block;
+    line-height: 36px;
+    padding-left: 10px;
    
+}
+
+
+/* CART */
+
+.header_container-cart{
+    display: flex;
+
+}
+
+.header_container-icon-cart{
+    position: relative;
+}
+
+.header_container-icon-cart:hover .header_container--no-cart{
+    display: block;
+    animation: fadeIn ease-in 0.3s;
+    
+}
+
+.header_container--no-cart{
+    background-color: var(--white-color);
+    position: absolute;
+    top: 100%;
+    width: 402px;
+    right: -4px;
+    display: none;
+    animation: fadeIn ease-in 0.3s;
+    box-shadow: 0 0 2px #777;
+    border-radius: 2px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.header_container--no-cart::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    border-width: 19px 23px;
+    border-style:solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    top: -30px;
+    cursor: pointer;
+}
+
+.header_container-img--no-cart{
+    width: 25%;
+}
+
+.header_container-text--no-cart{
+    display: block;
+    margin-top: 20px ;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    
 }

@@ -88,11 +88,14 @@
 
 
 .header__navbar-list-infor{
-    color: var(--text-color);
     font-size: 1.5rem;
     font-weight: 450;
     padding: 10px 18px;
     border-radius: 2px;
+}
+
+.header__navbar-list-infor a{
+    color: var(--text-color);
 }
 
 .header__navbar-list-infor:hover{
@@ -597,10 +600,6 @@
     margin: 0;
 }
 
-.header_container-item{
-   
-}
-
 .header_container-item:hover{
     background-color: #f7f7f7;
 }
@@ -613,7 +612,6 @@
     padding-left: 10px;
    
 }
-
 
 /* CART */
 

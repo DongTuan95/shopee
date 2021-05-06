@@ -12,9 +12,9 @@
 .header__navbar-list{
     list-style: none;
     padding-left: 0;
-    display: flex;
     align-items: center;
-
+    display: flex;
+    
 }
 
 .header__navbar-item{
@@ -528,6 +528,7 @@
     height: 34px;
     margin-right: 4px;
     padding: 0 15px;
+    color: var(--white-color);
 }   
 
 
@@ -776,6 +777,7 @@
 }
 
 .btn-cart{
+    display: flex;
     color: var(--white-color);
     background-color: var(--primary-color);
     max-width: 32%;
@@ -783,4 +785,63 @@
     margin: 10px 10px 10px auto;
     font-size: 1.4rem;
     width: 130px;
+}
+
+
+/* APP CONTAINER */
+.app__container{
+    background-color: #F5F5F5;
+}
+
+.category{
+    background-color: var(--white-color);
+    border-radius: 2px;
+    padding: 0 20px;
+}
+
+.category__heading{
+    font-size: 1.5rem;
+    color:  var(--text-color);
+    font-weight: 500;
+    padding: 10px 0;
+
+}
+
+.category-list{
+    list-style: none;
+    padding: 0;
+
+}
+
+.category-item{
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(236, 234, 234)
+}
+
+.category-item__link{
+    position: relative;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    transition: right linear 0.1s;
+    right: 0;
+}
+
+.category-item__link:hover{
+    color: var(--primary-color);
+    right: -5px;
+}
+
+.category-item--active{
+    color: var(--primary-color);
+}
+
+.home-filter{
+    margin-top: 15px;
+    padding: 13px 20px;
+    background-color: #ededed   ;
+}
+
+.home-filter--label{
+    font-size: 1.5rem;
+    color: var(--text-color);
 }

@@ -232,7 +232,7 @@
         <div class="app__container">
             <div class="grid">
                 <div class="grid__row">
-                    <div class="grid_colum_2">
+                    <div class="grid__colum_2">
                         <nav class="category">
                             <h3 class="category__heading">
                                 DANH MỤC SHOP
@@ -256,12 +256,37 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="grid_colum_10">
+                    <div class="grid__colum_10">
                         <div class="home-filter">
-                            <span class="home-filter--label">Sắp xếp theo</span>
-                            <button class="btn header_container-btnsearch mg-left-10">Phổ Biến</button>
-                            <button class="btn mg-left-10">Mới Nhất</button>
-                            <button class="btn mg-left-10">Bán Chạy</button>
+                            <div class="home-filter--btn">
+                                <span class="home-filter--label">Sắp xếp theo</span>
+                                <button class="btn home-filter-color mg-left-10">Phổ Biến</button>
+                                <button class="btn mg-left-10">Mới Nhất</button>
+                                <button class="btn mg-left-10">Bán Chạy</button>
+                                <div class="btn status__placeholder mg-left-10">
+                                    <div>
+                                    <span class="status__placeholder-text">Giá</span>
+                                    </div>
+                                    <div>
+                                    <i class="status__placeholder-icon fas fa-chevron-down"></i>
+                                    </div>
+                                    <ul class="status__placeholder--hover">
+                                        <li class="status__placeholder--select">Giá: Thấp đến Cao</li>
+                                        <li class="status__placeholder--select">Giá: Cao đến Thấp</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="home-filter__pagination">
+                                <span class="pagination-number">1</span>
+                                <span class="pagination-number mg-left--2">/1</span>
+                                <button class="btn mg-left-20">
+                                    <i class="icon-size fas fa-chevron-left"></i>
+                                </button>
+                                <button class="btn mg-left--2">
+                                    <i class="icon-size fas fa-chevron-right"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

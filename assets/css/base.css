@@ -31,8 +31,12 @@ a{
     margin-left: 20px;
 }
 
-.mg-left--2{
-    margin-left: -2px;
+.mg-left--1{
+    margin-left: -1px;
+}
+
+.font-size-15px{
+    font-size: 1.5rem !important;
 }
 
 /* Responsive */

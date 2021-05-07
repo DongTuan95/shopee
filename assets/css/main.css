@@ -105,7 +105,7 @@
 
 .header__navbar-item--dow:hover .header__qr{
     display: block;
-    z-index: 1;
+    z-index: 3;
 }
 
 .header__navbar-item--bold{
@@ -129,7 +129,7 @@
 .header__notification:hover .header__notifi{
     display: block;
     animation: fadeIn ease-in 0.3s;
-    z-index: 1;
+    z-index: 3;
 
 }
 
@@ -669,6 +669,7 @@
     border-radius: 2px;
     cursor: default;
     display: none;
+    z-index: 3;
 }
 
 .header_container--no-cart{
@@ -846,7 +847,7 @@
 }
 
 .home-filter--label{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--text-color);
 }
 
@@ -879,6 +880,7 @@
 .status__placeholder--select{
     padding: 10px;
     color: var(--text-color);
+    font-size: 1.5rem;
 
 }
 

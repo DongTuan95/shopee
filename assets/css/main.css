@@ -904,5 +904,8 @@
 .icon-size{
     width: 16px;
     font-size: 1.1rem;
-    opacity: 0.2;
+}
+
+.icon-dis{
+    color: rgb(207, 204, 204);
 }
